@@ -1,0 +1,311 @@
+
+
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 200;
+}
+
+h1{
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  text-transform: uppercase;
+}
+
+.header{
+  color: blue;
+  background: yellow;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+}
+ol,
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+figure{
+  margin: 0;
+}
+ .header a{
+   color: #026fff;
+   text-decoration: none;
+   display: flex;
+   height: inherit;
+   align-items: center;
+   padding: 0 10px;
+ }
+ .menu{
+   height:inherit;
+ }
+ .header ol{
+   display: flex;
+   height:inherit;
+ }
+ .header ol li{
+   height: inherit;
+ }
+ .flexbox{
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .box{
+   width: 50px;
+   height: 50px;
+   border: 1px solid red;
+
+  margin: 4px;
+ }
+ .footer{
+   color: white;
+   background-color: grey;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+.footer img{
+  vertical-align: middle;
+}
+.portafolio{
+  padding: 20px;
+}
+.hero{
+  display: flex;
+  justify-content: space-between;
+}
+h1 strong{
+  color: #026fff
+}
+h2{
+  color: #026fff;
+  text-transform: upperscase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.you-video{
+  align-items: center;
+  max-width: auto;
+  width: 100%;
+}
+.articulos{
+  border: 1px solid black;
+  border-radius: 7px;
+  margin-right: 13px;
+}
+.contacto{
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+.link.facebook{
+  background-image: url('facebook-logo.svg');
+}
+.link.instagram{
+  background-image: url('instagram-logo.svg');
+}
+.form-email input{
+  border-color: gray;
+  padding: 10px 20px 10px 25px;
+  border-style: solid;
+  border-radius: 5px;
+  background-image: url('https://image.flaticon.com/icons/png/512/33/33700.png');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+.form-email button{
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+.form-email h3{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 40px;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+}
+
+@media screen and (max-width: 1200px){
+  .container{
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1113px){
+  .container{
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  h1{
+    font-size: 40px;
+  }
+  .img-hero{
+    max-width: 300px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 879px){
+  .container{
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .img-hero{
+    max-width: 270px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header{
+    display: block;
+    height: auto;
+  }
+  .hero{
+    justify-content: center;
+  }
+  .header ol{
+    display: block;
+  }
+  .header ol li{
+    height: 50px;
+  }
+  .header a{
+    justify-content: center;
+  }
+  .you-video{
+    max-width: auto;
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px){
+  h1{
+      font-size: 20px
+  }
+  .contacto{
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    display: block;
+  }
+  .form-email button{
+    margin: 1em auto;
+  }
+  .footer{
+    text-align: center;
+    display: block;
+    border: 1px solid transparent;
+  }
+}
+@media screen and (min-width: 1201px){
+  .container {
+    max-width: 1350px;
+    width: 97%;
+    margin: 0 40px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+  }
+  .you-video{
+    width: 97%;
+  }
+}
+
+@media screen and (min-width: 1450px){
+  .container {
+    max-width: inherit;
+    width: 98%;
+    margin: 0 40px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+  }
+  .you-video{
+    width: 97%;
+  }
+}
+
+.fadeIn{
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.fadedown{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadedown;
+}
+@keyframes fadedown {
+  from{
+    opacity: 0;
+    transform: translate3d(0,-100%,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+.fadeup{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeup;
+}
+@keyframes fadeup {
+  from{
+    opacity: 0;
+    transform: scale3d(0,0,0);
+  }
+  to{
+    opacity: 1;
+    transform: scale3d(0,100%,0);
+  }
+}
